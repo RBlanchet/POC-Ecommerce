@@ -1,0 +1,4 @@
+<?php
+
+$strFooter = "</div>
+      </div>";
