@@ -8,12 +8,10 @@
     <title>Ecommerce</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.css" rel="stylesheet">
     <!-- Custom css -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_payement.css" rel="stylesheet">
+    <!-- Page produits -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 </head>
 
-<body style="font-weight: 0">
+<body>

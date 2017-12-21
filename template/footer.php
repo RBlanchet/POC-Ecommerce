@@ -9,6 +9,8 @@
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!-- Custom js -->
 <script type="text/javascript" src="js/index.js"></script>
+<!-- Jquery Payement -->
+<script src='https://stripe.github.io/jquery.payment/lib/jquery.payment.js'></script>
 </body>
 
 </html>

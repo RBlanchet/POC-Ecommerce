@@ -3,11 +3,10 @@
 /* Pour les pages produits */
 @import url(https://fonts.googleapis.com/css?family=Satisfy);
 @import url(https://fonts.googleapis.com/css?family=Acme);
-body {
-  background: #faff81;
-}
 
 .box-wrapper {
+  display: block;
+  margin: auto;
   background-color: #fff;
   overflow: hidden;
   max-width: 320px;
@@ -56,10 +55,9 @@ body {
 
 .title {
   font-size: 2em;
-  font-weight: 900;
+  font-weight: 300;
   text-transform: uppercase;
   margin: 0;
-  font-family: 'Acme', sans-serif;
 }
 
 .desc {

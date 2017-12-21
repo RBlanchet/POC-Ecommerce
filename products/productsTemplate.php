@@ -2,9 +2,13 @@
 $strBody = "<div class='col-md-6' style='padding-top: 50px'>
           <div class='box-wrapper'>
             <img src='" . $value['image'] ."' alt='rhcp' />
-            <div class='box-content'>
-              <a class='buy' href='basket/addBasket.php?title=" . $value['title'] . "&price=" . $value['price'] . "&panier=" . $value['id'] . "'><span><i class='fa fa-cart-plus'></i></span></a>
-              <div class='title'>" . $value['title'] . "</div>
+            <div class='box-content'>";
+if (isset($_SESSION['user']) && $valid)
+{
+  $strBody .= "<a class='buy' href='basket/addBasket.php?title=" . $value['title'] . "&price=" . $value['price'] . "&panier=" . $value['id'] . "'><span><i class='fa fa-cart-plus'></i></span></a>";
+}
+
+$strBody .= "<div class='title'>" . $value['title'] . "</div>
               <div class='desc'>" . $value['description'] . "</div>
               <span class='price'>" . $value['price'] . " €</span>
               <div class='footer'>

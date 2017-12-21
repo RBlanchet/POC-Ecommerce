@@ -1,6 +1,4 @@
 <?php
-// On initialise un array
-$data = array();
 // On initialise un unique id pour notre article
 $id = uniqid();
 // On verfie si l'url de l'image est bonne, sinon on en initialise une de base
@@ -19,12 +17,10 @@ if(isset($_POST))
     "image" => $image,
     "rate" => 0
   );
+  $inp = file_get_contents('products.json');
+  $tempArray = json_decode($inp, true);
+  array_push($tempArray, $id);
+  $jsonData = json_encode($tempArray);
+  file_put_contents('products.json', $jsonData);
 }
-
-$inp = file_get_contents('products.json');
-$tempArray = json_decode($inp, true);
-array_push($tempArray, $id);
-$jsonData = json_encode($tempArray);
-file_put_contents('products.json', $jsonData);
-
 header('Location: ../index.php');

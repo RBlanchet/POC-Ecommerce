@@ -1,10 +1,1 @@
-{
-  "user1" :{
-    "username": "test",
-    "password": "test"
-  },
-  "user2" :{
-    "username": "test2",
-    "password": "test2"
-  }
-}
+{"user1":{"username":"test","password":"test"},"user2":{"username":"test2","password":"test2"},"0":{"username":"User","password":"user"},"1":{"username":"test3","password":"test3"},"2":{"username":"test5","password":"test5"}}
